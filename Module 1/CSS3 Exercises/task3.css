@@ -1,0 +1,39 @@
+/* Reset margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style all <h2> elements */
+h2 {
+    font-family: 'Georgia', serif;
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+/* Style for the banner with ID mainHeader */
+#mainHeader {
+    background-color: #3498db;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+/* Style for event containers with class eventCard */
+.eventCard {
+    background-color: #ecf0f1;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 15px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Grouping selector for <h3> and <p> elements */
+h3, p {
+    font-family: 'Arial', sans-serif;
+    color: #34495e;
+    line-height: 1.4;
+}

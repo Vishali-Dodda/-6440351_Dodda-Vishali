@@ -1,0 +1,35 @@
+<!-- Event Feedback Section -->
+<section id="feedback">
+    <h2>Event Feedback</h2>
+  
+    <form id="feedbackForm">
+        <!-- Phone Number Field with onblur -->
+        <label for="phone">Phone Number:</label>
+        <input type="text" id="phone" onblur="validatePhone()" placeholder="Enter 10-digit number">
+        <div id="phoneError" style="color: red;"></div>
+
+        <!-- Dropdown with onchange -->
+        <label for="eventSelect">Select Event:</label>
+        <select id="eventSelect" onchange="showFee()">
+            <option value="">--Choose Event--</option>
+            <option value="cleanup" data-fee="Free">Community Cleanup</option>
+            <option value="festival" data-fee="$10">Food Festival</option>
+            <option value="concert" data-fee="$20">Concert</option>
+            <option value="exhibition" data-fee="$5">Art Exhibition</option>
+        </select>
+        <div id="feeDisplay" style="font-weight: bold;"></div>
+
+        <!-- Feedback Textarea with key events -->
+        <label for="feedback">Feedback:</label>
+        <textarea id="feedback" rows="4" onkeyup="countChars()" placeholder="Your feedback..."></textarea>
+        <div id="charCount">0 characters</div>
+
+        <!-- Image with ondblclick -->
+        <img src="event6.jpg" alt="Event Highlight" title="Double-click to enlarge" id="eventImage" ondblclick="enlargeImage()" class="eventImage"><br><br>
+
+        <!-- Submit Button with onclick -->
+        <button type="button" onclick="submitForm()">Submit</button>
+        <div id="confirmMsg" style="color: green;"></div>
+        <output id="feedbackConfirmation"></output>
+    </form>
+</section>

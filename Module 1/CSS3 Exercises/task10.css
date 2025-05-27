@@ -1,0 +1,51 @@
+/* Base navigation styles: horizontal layout */
+.nav-menu {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+/* Responsive styles for screens smaller than 768px */
+@media (max-width: 767px) {
+    /* Stack nav links vertically */
+    .nav-menu {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+    }
+
+    /* Reduce font sizes for headings */
+    h1 {
+        font-size: 6vw; /* Responsive font size */
+    }
+
+    h2 {
+        font-size: 5vw;
+    }
+
+    /* Reduce image sizes */
+    img {
+        max-width: 80vw; /* Flexible width based on viewport */
+        height: auto;
+    }
+
+    /* Adjust container padding */
+    .container {
+        padding: 5vw;
+    }
+}
+
+/* Example of Flexbox for main layout */
+.main-layout {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap; /* Allow wrapping on small screens */
+}
+
+/* Adjust flex children for responsiveness */
+.main-layout > div {
+    flex: 1 1 300px; /* Grow/shrink with minimum 300px width */
+    min-width: 250px;
+}

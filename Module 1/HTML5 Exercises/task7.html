@@ -1,0 +1,13 @@
+<section>
+    <form onbeforeunload="return warnBeforeUnload()">
+  
+      <!-- Video Invite -->
+      <label for="promoVideo">Event Promo Video:</label><br>
+      <video id="promoVideo" width="400" controls oncanplay="videoReadyMessage()">
+        <source src="promo.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div id="videoStatus"></div>
+  
+    </form>
+  </section>

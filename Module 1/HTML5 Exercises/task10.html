@@ -1,0 +1,23 @@
+<!--
+1)-Open the page in Google Chrome.
+-Right-click any part of the page (like a button or heading) and choose “Inspect”.
+-Inside the Elements tab, select an element (like <h2>).
+-In the Styles pane, modify styles like:
+color: red;
+background-color: yellow;
+font-size: 24px;
+
+2)-In your <script> block, add a log like this:
+console.log("Geolocation function triggered.");
+-Open DevTools > Console tab.
+-Click your "Find Nearby Events" button and see the log message.
+
+
+3)-Open DevTools > Sources tab.
+-Navigate to your main.js or inline <script> code.
+-Find a line like:const lat = position.coords.latitude;
+-Click the line number next to it to set a breakpoint.
+-Reload the page and trigger the location function.
+-Chrome will pause at the breakpoint — hover over variables like position to see their values.
+
+-->

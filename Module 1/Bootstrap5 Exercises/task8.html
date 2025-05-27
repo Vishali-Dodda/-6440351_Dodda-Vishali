@@ -1,0 +1,56 @@
+<!-- Exercise 8.1: Registration form with Bootstrap form components -->
+<div class="container mt-4">
+    <h2>Registration Form</h2>
+    <form>
+      <div class="mb-3">
+        <label for="fullName" class="form-label">Full Name</label>
+        <input type="text" class="form-control" id="fullName" placeholder="Enter your full name" />
+      </div>
+  
+      <div class="mb-3">
+        <label for="emailReg" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="emailReg" placeholder="name@example.com" />
+      </div>
+  
+      <div class="mb-3">
+        <label for="passwordReg" class="form-label">Password</label>
+        <input type="password" class="form-control" id="passwordReg" placeholder="Password" />
+      </div>
+  
+      <div class="mb-3">
+        <label for="phoneNumber" class="form-label">Phone Number</label>
+        <div class="input-group">
+          <span class="input-group-text">+91</span>
+          <input type="tel" class="form-control" id="phoneNumber" placeholder="1234567890" />
+        </div>
+      </div>
+  
+      <div class="form-check mb-3">
+        <input class="form-check-input" type="checkbox" value="" id="termsCheck" />
+        <label class="form-check-label" for="termsCheck">
+          I agree to the terms and conditions
+        </label>
+      </div>
+  
+      <button type="submit" class="btn btn-primary">Register</button>
+    </form>
+  </div>
+  
+  <!-- Exercise 8.2: Login form using form-floating -->
+  <div class="container mt-5" style="max-width: 400px;">
+    <h2>Login</h2>
+    <form>
+      <div class="form-floating mb-3">
+        <input type="email" class="form-control" id="floatingEmail" placeholder="name@example.com" />
+        <label for="floatingEmail">Email address</label>
+      </div>
+  
+      <div class="form-floating mb-3">
+        <input type="password" class="form-control" id="floatingPassword" placeholder="Password" />
+        <label for="floatingPassword">Password</label>
+      </div>
+  
+      <button type="submit" class="btn btn-success w-100">Login</button>
+    </form>
+  </div>
+  

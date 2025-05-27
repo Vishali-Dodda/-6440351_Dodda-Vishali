@@ -1,0 +1,29 @@
+/* Fallback background color and background image for body */
+body {
+    background-color: #e0e7ff; /* Light periwinkle fallback color */
+    background-image: url('images/cityscape.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #333333; /* Default text color */
+}
+
+/* Text color using HEX */
+h1, h2, h3 {
+    color: #004080; /* Dark navy blue */
+}
+
+/* Text color using RGBA with some transparency */
+p {
+    color: rgba(0, 0, 0, 0.75); /* Nearly black with 75% opacity */
+}
+
+/* Gradient background for section headers */
+.section-header {
+    background: linear-gradient(90deg, #0055cc, #0099ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    font-size: 2rem;
+    padding: 10px 0;
+}

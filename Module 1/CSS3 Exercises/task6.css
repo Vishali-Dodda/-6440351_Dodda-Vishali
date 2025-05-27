@@ -1,0 +1,41 @@
+/* Link styling */
+a:link {
+    color: #0066cc; /* Custom blue */
+    text-decoration: none;
+}
+
+a:visited {
+    color: #663399; /* Purple for visited links */
+}
+
+a:hover {
+    color: #004080; /* Darker blue on hover */
+    text-decoration: underline;
+}
+
+a:active {
+    color: #00264d; /* Even darker when active */
+}
+
+/* Styling unordered lists */
+ul {
+    list-style-type: disc;          /* Default bullet */
+    list-style-position: inside;   /* Bullets inside padding */
+    margin-left: 20px;
+    padding-left: 0;
+}
+
+/* Navigation menu list - remove bullets */
+.nav-menu {
+    list-style-type: none;  /* No bullets */
+    padding-left: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px; /* Space between menu items */
+}
+
+/* List items padding and margin */
+li {
+    padding: 5px 0;
+    margin-bottom: 5px;
+}

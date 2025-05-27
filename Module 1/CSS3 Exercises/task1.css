@@ -1,0 +1,45 @@
+/* Inline style example applied directly in HTML: */
+/* <h1 style="color: red;">Heading Text</h1> */
+
+/* Embedded style for body background */
+body {
+  background-color: #f0f8ff; /* Light blue background */
+}
+
+/* External stylesheet: styles.css */
+
+/* Header styles */
+h1, h2, h3 {
+  font-family: 'Arial', sans-serif;
+  margin-bottom: 10px;
+}
+
+/* Paragraph styles */
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333333;
+}
+
+/* Link styles */
+a {
+  color: #007acc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Button styles */
+button {
+  background-color: #007acc;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #005f99;
+}

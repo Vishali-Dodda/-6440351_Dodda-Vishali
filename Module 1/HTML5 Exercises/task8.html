@@ -1,0 +1,15 @@
+<section>
+    <!-- Event Preference Dropdown -->
+    <label for="preferredEvent">Choose Your Preferred Event:</label>
+    <select id="preferredEvent" onchange="savePreference()">
+      <option value="">--Select--</option>
+      <option value="cleanup">Community Cleanup</option>
+      <option value="festival">Food Festival</option>
+      <option value="concert">Concert</option>
+      <option value="exhibition">Art Exhibition</option>
+    </select>
+  
+    <!-- Clear Preferences Button -->
+    <button type="button" onclick="clearPreferences()">Clear Preferences</button>
+    <p id="storageMessage"></p>
+</section>

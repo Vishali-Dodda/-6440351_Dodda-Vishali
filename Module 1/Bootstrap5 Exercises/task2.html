@@ -1,0 +1,55 @@
+<!--
+Exercise 2.1: Bootstrap Directory Structure Explained
+Downloaded Bootstrap folder structure typically includes:
+
+css/
+Contains compiled CSS files like bootstrap.min.css and source maps. This folder holds all styles needed for Bootstrap components and utilities.
+
+js/
+Contains JavaScript files such as bootstrap.bundle.min.js and bootstrap.min.js. The bundle version includes Popper.js (used for tooltips, dropdowns, and popovers). These scripts enable interactive components like modals, dropdowns, carousels, etc.
+
+icons/ (optional, depending on the download)
+Contains SVG icon files if you downloaded Bootstrap Icons. These are vector icons that can be used within your project for buttons, navigation, and UI elements.
+-->
+<!--
+    Exercise 2.2: Include Bootstrap JavaScript Plugins via bootstrap.bundle.min.js
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap JS Plugins Example</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container mt-5 text-center">
+        <h2>Bootstrap Modal Example</h2>
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          Launch Modal
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalLabel">Modal Title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                This is a Bootstrap modal powered by bootstrap.bundle.min.js.
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS Bundle (includes Popper) -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

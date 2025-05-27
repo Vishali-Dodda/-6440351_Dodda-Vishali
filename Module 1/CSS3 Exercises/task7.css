@@ -1,0 +1,28 @@
+/* Table base styling */
+table {
+    width: 100%;
+    border-collapse: collapse; /* Collapse borders */
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Table header styling */
+th {
+    background-color: #007BFF;
+    color: white;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    font-weight: 600;
+}
+
+/* Table data cell styling */
+td {
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    color: #333333;
+}
+
+/* Zebra striping for even rows */
+tr:nth-child(even) {
+    background-color: #f2f6ff;
+}
