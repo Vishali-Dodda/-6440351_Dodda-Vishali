@@ -1,7 +1,6 @@
-/*
--Open Chrome DevTools (Ctrl+Shift+I), then toggle device toolbar (Ctrl+Shift+M) to simulate different screen sizes.
--Inspect elements to view and live-edit CSS styles for quick fixes.
--Use the Network tab to ensure your external CSS files load correctly without errors.
--In VS Code, use the Live Server extension to auto-refresh your browser as you edit code.
--Test responsiveness by switching between portrait and landscape modes and adjusting font/image sizes.
+/* 
+1. Open Chrome DevTools (`Ctrl+Shift+I`) and click the device toolbar (`Ctrl+Shift+M`) to simulate small screens.
+2. Inspect elements and test style changes live in the **Elements** tab (e.g., adjust margins, widths).
+3. Use the **Network** tab, reload the page, and check if your external CSS file is loaded without errors.
+4. In VS Code, fix issues using media queries like `@media (max-width: 768px)` and preview with Live Server.
 */
